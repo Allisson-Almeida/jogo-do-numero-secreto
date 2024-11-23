@@ -10,6 +10,7 @@ function MensagemInicial(){
 
 MensagemInicial();
 
+
 function verificarChute (){
     tentativas++
     let chute = document.querySelector('input').value;
@@ -29,11 +30,13 @@ function verificarChute (){
 }    
 }
 
+
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;    
     responsiveVoice.speak(texto,'Brazilian Portuguese Female', {rate:1.2})
 }
+
 
 function gerarNumeroAleatorio() {
     let numeroEscolhido =  parseInt(Math.random() * numeroLimite +1);
@@ -53,10 +56,12 @@ function gerarNumeroAleatorio() {
 
 }
 
+
 function limparCampo(){
     chute = document.querySelector('input');
     chute.value = '';
 }
+
 
 function reiniciarJogo(){
     numeroSecreto = gerarNumeroAleatorio();
